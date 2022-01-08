@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.wallpapersapp.ui.fragments.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.wallpapersapp.ui.fragments.FavouriteFragment"
+        tools:layout="@layout/fragment_favourite">
+    </fragment>
+
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.example.wallpapersapp.ui.fragments.MoreFragment"
+        tools:layout="@layout/fragment_more">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.example.wallpapersapp.ui.ImageActivity"
+        tools:layout="@layout/fragment_image">
+    </fragment>
+</navigation>

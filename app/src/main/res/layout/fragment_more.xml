@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.wallpapersapp.widgets.CustomBoldTextView
+            android:id="@+id/title"
+            style="@style/titleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.example.wallpapersapp.widgets.CustomBoldTextView
+                style="@style/moreTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_location" />
+
+
+            <com.example.wallpapersapp.widgets.CustomRegularTextView
+                style="@style/moreSubTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/storage_download_fff_wallpapers" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnRateus"
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.wallpapersapp.widgets.CustomBoldTextView
+                style="@style/moreTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rate_us" />
+
+
+            <com.example.wallpapersapp.widgets.CustomRegularTextView
+                style="@style/moreSubTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rate_our_app" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SelectableItemBackground"
+            android:orientation="vertical">
+
+            <com.example.wallpapersapp.widgets.CustomBoldTextView
+                style="@style/moreTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_" />
+
+
+            <com.example.wallpapersapp.widgets.CustomRegularTextView
+                style="@style/moreSubTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_our_app_with_friends" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SelectableItemBackground"
+            android:id="@+id/lnPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.wallpapersapp.widgets.CustomBoldTextView
+                style="@style/moreTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy" />
+
+
+            <com.example.wallpapersapp.widgets.CustomRegularTextView
+                style="@style/moreSubTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_privacy_policy" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
