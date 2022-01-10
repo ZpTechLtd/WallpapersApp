@@ -53,7 +53,7 @@ class MoreFragment constructor() : Fragment() {
                 val shareIntent = Intent(Intent.ACTION_SEND)
                 shareIntent.type = "text/plain"
                 shareIntent.putExtra(Intent.EXTRA_SUBJECT, R.string.app_name)
-                var shareMessage = "FFF Wallpapers App\n\n"
+                var shareMessage = "Wallpapers App\n\n"
                 shareMessage =
                     """
                     ${shareMessage}https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}

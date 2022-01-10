@@ -23,7 +23,7 @@ import java.net.URL
 
 
 private val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
-private val parent: File = File("${path}/FFF Wallpapers/")
+private val parent: File = File("${path}/Wallpapers/")
 
 fun Context.download(
     result: Result,
