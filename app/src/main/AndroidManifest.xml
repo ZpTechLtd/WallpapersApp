@@ -37,6 +37,9 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".ui.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -48,12 +51,12 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <meta-data
-            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
-            android:value="true" />
 <!--        <meta-data-->
-<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
-<!--            android:value="ca-app-pub-3940256099942544~3347511713" />-->
+<!--            android:name="com.google.android.gms.ads.AD_MANAGER_APP"-->
+<!--            android:value="true" />-->
+<!--                <meta-data-->
+<!--                    android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--                    android:value="ca-app-pub-3940256099942544~3347511713" />-->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3784717186068608~7117109551" />

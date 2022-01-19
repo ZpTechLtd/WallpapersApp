@@ -23,6 +23,8 @@ public class PreferenceManager {
     private Gson gson;
     private Context context;
 
+    private static final String PRIVACY_POLICY = "privacy_policy";
+
     public PreferenceManager(Context context) {
         this.context = context;
         sharedPreferences = context.getSharedPreferences("wallpaper", Context.MODE_PRIVATE);
@@ -103,5 +105,13 @@ public class PreferenceManager {
 
     public String getADMOB_native_banner() {
         return sharedPreferences.getString(ADMOB_native_banner, context.getString(R.string.admob_native_banner));
+    }
+
+    public void setPrivacyPolicy(boolean privacyPolicy) {
+        editor.putBoolean(PRIVACY_POLICY, privacyPolicy).commit();
+    }
+
+    public boolean getPrivacyPolicy() {
+        return sharedPreferences.getBoolean(PRIVACY_POLICY, false);
     }
 }

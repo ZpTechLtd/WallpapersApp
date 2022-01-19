@@ -73,7 +73,12 @@ class SplahActivity : AppCompatActivity() {
             }
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+
+            if (preferenceManager.privacyPolicy) {
+                startActivity(Intent(this, MainActivity::class.java))
+            }else{
+                startActivity(Intent(this, PrivacyPolicyActivity::class.java))
+            }
             adManager.showInterstitialSplash()
             finish()
         }, 8000)
